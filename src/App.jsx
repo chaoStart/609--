@@ -18,7 +18,7 @@ import { Select, Tabs } from 'antd'
 // 这是一个新的开始，我们做的609项目   
 //我们实现了从GitHub拉去数据
 //可是没能成功！！！于是我们打算再推送一次
-//现在我们成功了，最后一次尝试pull
+//现在我们成功了，最后一次尝试pull，并且在本地编译器push出去了
 const App = memo(() => {
   const { Option } = Select;
   let items = ['水煤浆', '一氧化碳']
