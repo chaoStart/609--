@@ -15,7 +15,8 @@ import Nowtimer from './pages/nowtime/index'
 import { setToken } from './util/TokenAction';
 import Showorder from './pages/叶轮订单展示'
 import { Select, Tabs } from 'antd'
-// import * as VueRouter from 'vue-router'
+// 这是一个新的开始，我们做的609项目   
+
 const App = memo(() => {
   const { Option } = Select;
   let items = ['水煤浆', '一氧化碳']
