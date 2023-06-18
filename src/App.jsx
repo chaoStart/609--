@@ -114,15 +114,15 @@ const App = memo(() => {
         <div className="content-middle">
           <div className="productionStatistics">
             <div className="productionToday">
-              <div className="number">5.71</div>
+              <div className="number">500</div>
               <span className="productionTitle">昨日产量</span>
             </div>
             <div className="productionMonth">
-              <div className="number">175.8</div>
+              <div className="number">1758</div>
               <span className="productionTitle">上月产量</span>
             </div>
             <div className="productionYear">
-              <div className="number">2100</div>
+              <div className="number">260K</div>
               <span className="productionTitle">去年产量</span>
             </div>
           </div>
