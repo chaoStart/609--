@@ -15,6 +15,7 @@ import Nowtimer from './pages/nowtime/index'
 import { setToken } from './util/TokenAction';
 import Showorder from './pages/叶轮订单展示'
 import { Select, Tabs } from 'antd'
+import MiddlePicture from './assets/img/加工实物图.png'
 // 这是一个新的开始，我们做的609项目   
 //我们实现了从GitHub拉去数据
 //可是没能成功！！！于是我们打算再推送一次
@@ -133,11 +134,10 @@ const App = memo(() => {
             </div>
             <div id="item" className="yierchunflowChart">
               <iframe
-                // src="http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/
-                // Page_38c3736d90f1485caab22655e988f496"
-                src="http://218.94.19.58:8080/resource/App_8f4cc82543cade465a3d58f1ecaade5c/%E5%9B%BE%E7%89%87/bg1.jpg"
+                // src="http://218.94.19.58:8080/resource/App_8f4cc82543cade465a3d58f1ecaade5c/%E5%9B%BE%E7%89%87/bg1.jpg"
+                src={MiddlePicture}
+                width="500" height="200"
                 frameBorder="0"
-                style={{ width: '100%', height: '100%' }}
               >
               </iframe>
             </div>
