@@ -64,6 +64,7 @@ const App = memo(() => {
         <span className='nowtime'><Nowtimer></Nowtimer></span>
       </div>
       <div className="content">
+        {/* 左边组件 */}
         <div className="content-left">
           <div className="otherApp">
             <div className="middleTitle">
@@ -112,7 +113,9 @@ const App = memo(() => {
             <EnergyIndicator></EnergyIndicator>
           </div>
         </div>
+        {/* 中间组件 */}
         <div className="content-middle">
+          {/* 日、月、年 */}
           <div className="productionStatistics">
             <div className="productionToday">
               <div className="number">500</div>
@@ -127,6 +130,7 @@ const App = memo(() => {
               <span className="productionTitle">去年产量</span>
             </div>
           </div>
+          {/* 中间的虚拟图片 */}
           <div className="flowChart">
             <div className="middleTitle" style={{ color: 'white' }}>
               <span className="emptyIcon"></span>
@@ -142,6 +146,7 @@ const App = memo(() => {
               </iframe>
             </div>
           </div>
+          {/* 下边的订单统计 */}
           <div id="yield">
             <div className="middleTitle">
               <span className="emptyIcon"></span>
@@ -151,6 +156,7 @@ const App = memo(() => {
             <Showorder></Showorder>
           </div>
         </div>
+        {/* 右边组件 */}
         <div className="content-right">
 
           <div className="safeGeneration">
