@@ -15,7 +15,7 @@ import Nowtimer from './pages/nowtime/index'
 import { setToken } from './util/TokenAction';
 import Showorder from './pages/叶轮订单展示'
 import { Select, Tabs } from 'antd'
-import MiddlePicture from './assets/img/加工实物图.png'
+import MiddlePicture from './assets/img/609.png'
 // 这是一个新的开始，我们做的609项目   
 //我们实现了从GitHub拉去数据
 //可是没能成功！！！于是我们打算再推送一次
@@ -137,13 +137,18 @@ const App = memo(() => {
               总布局监控
             </div>
             <div id="item" className="yierchunflowChart">
-              <iframe
-                // src="http://218.94.19.58:8080/resource/App_8f4cc82543cade465a3d58f1ecaade5c/%E5%9B%BE%E7%89%87/bg1.jpg"
-                src={MiddlePicture}
-                width="500" height="200"
-                frameBorder="0"
+              {/* iframe表示可以用src的形式嵌入别的网页或者动态的视频、GIF等 */}
+              {/* <iframe
+                src="http://218.94.19.58:8080/resource/App_8f4cc82543cade465a3d58f1ecaade5c/%E5%9B%BE%E7%89%87/bg1.jpg"
+                // src="https://www.bilibili.com/video/BV1PY411e7J6/?p=95&spm_id_from=pageDriver&vd_source=25ef4b70cde1f8301118e56a66a4e31e"
+                // src={MiddlePicture}
+                width="100%" height="100%"
+                allow="fullscreen"
               >
-              </iframe>
+              </iframe> */}
+
+              <img src={MiddlePicture} alt="中间图片" style={{ width: '100%', height: '100%' }} />
+
             </div>
           </div>
           {/* 下边的订单统计 */}
