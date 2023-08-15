@@ -35,7 +35,7 @@ const App = memo(() => {
   }
 
   // let workshopSection = ['DMO合成', 'DMO精馏', 'EG合成', 'EG精馏']
-  let workshopSection = ['涡轮产量', 'DMO精馏', 'EG合成', 'EG精馏']
+  let workshopSection = ['叶轮产量', '叶轮待完成量', '毛坯消耗量', '毛坯剩余产量']
   let workshopSectiontItems = [];
   for (let i of workshopSection) {
     workshopSectiontItems.push(<Option key={i} value={i}>{i}</Option>)
@@ -44,7 +44,7 @@ const App = memo(() => {
   const [selectContent, setselectContent] = useState('水煤浆');
   const [device_yield, setdevice_yield] = useState('车间一');
   // const [workspace_section, setworkspace_section] = useState('DMO合成');
-  const [workspace_section, setworkspace_section] = useState('涡轮产量');
+  const [workspace_section, setworkspace_section] = useState('叶轮产量');
 
   const handleChang_edevice_yieldSelectItems = (value) => {
     setdevice_yield(value)
@@ -147,7 +147,9 @@ const App = memo(() => {
               >
               </iframe> */}
 
-              <img src={MiddlePicture} alt="中间图片" style={{ width: '100%', height: '100%' }} />
+              {/* <img src={MiddlePicture} alt="中间图片" style={{ width: '100%', height: '100%' }} /> */}
+              <img src="http://218.94.19.58:8080/resource/App_8f4cc82543cade465a3d58f1ecaade5c/%E5%9B%BE%E7%89%87/bg1.jpg"
+                alt="中间图片" style={{ width: '100%', height: '100%' }} />
 
             </div>
           </div>
@@ -182,8 +184,8 @@ const App = memo(() => {
           <div className="troubleForm">
             <div className="middleTitle">
               <span className="emptyIcon"></span>
-              情景融合优化
-              <div className="rest1" style={{ width: '20%', height: '90%' }}></div>
+              情景融合交互
+              <div className="rest1" style={{ width: '10%', height: '90%' }}></div>
               <div className="rest">
                 <Select
                   size='large'

@@ -11,11 +11,9 @@ import img8 from '../../assets/img/AppIcon/能源管控/新建文件夹/能效�
 const ExtraApp = memo(() => {
     // const [optimationURL] = useState('http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/Page_6b43a56ff3274bb09bd37267ac8f3091')
     const [optimationURL] = useState('http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/Page_3be6231f176e456bb3eb291fb36f27b0')
-
     const [productionControlURL] = useState('http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/Page_d2ee3fe561204b8b8b563982b4fe5e5e')
-
     const [equipmentURL] = useState('http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/Page_d0532599c8b24f13af9c2b533f8e4b88')
-    const [safeURL] = useState('http://niim.com.cn:8080/#/application-runtime/Page_7f846c906066417690be99940930edd1')
+    const [safeURL] = useState('http://218.94.19.58:8080/#/runtime-fullscreen/runtime-fullscreen/Page_7f846c906066417690be99940930edd1')
     return (
         <div id="mainbox">
             <div className="topApp">
