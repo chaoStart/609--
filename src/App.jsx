@@ -34,7 +34,7 @@ const App = memo(() => {
   }
 
   // let workshopSection = ['DMO合成', 'DMO精馏', 'EG合成', 'EG精馏']
-  let workshopSection = ['涡轮产量', 'DMO精馏', 'EG合成', 'EG精馏']
+  let workshopSection = ['叶轮产量', '叶轮待完成量', '剩余毛胚']
   let workshopSectiontItems = [];
   for (let i of workshopSection) {
     workshopSectiontItems.push(<Option key={i} value={i}>{i}</Option>)
@@ -43,7 +43,7 @@ const App = memo(() => {
   const [selectContent, setselectContent] = useState('水煤浆');
   const [device_yield, setdevice_yield] = useState('车间一');
   // const [workspace_section, setworkspace_section] = useState('DMO合成');
-  const [workspace_section, setworkspace_section] = useState('涡轮产量');
+  const [workspace_section, setworkspace_section] = useState('叶轮产量');
 
   const handleChang_edevice_yieldSelectItems = (value) => {
     setdevice_yield(value)
@@ -172,7 +172,7 @@ const App = memo(() => {
             <div className="middleTitle">
               <span className="emptyIcon"></span>
               情景融合优化
-              <div className="rest1" style={{ width: '20%', height: '90%' }}></div>
+              <div className="rest1" style={{ width: '10%', height: '90%' }}></div>
               <div className="rest">
                 <Select
                   size='large'
@@ -181,14 +181,14 @@ const App = memo(() => {
                   // value={selectContent}
                   defaultValue={workspace_section}
                   style={{ width: '100%', height: '50%' }}
+                  onChange={handleChangeworkshopSectiontItems}
                 >
                   {workshopSectiontItems}
                 </Select>
               </div>
             </div>
-            <div id="item">
-              <Optimization></Optimization>
-            </div>
+            {/* <div id="item"></div>  */}
+            <Optimization type={workspace_section}></Optimization>
           </div>
           <div className="Apccontent">
             <div className="middleTitle">
