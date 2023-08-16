@@ -6,7 +6,7 @@ import FailureAnalysis from './pages/FailureAnalysis';
 import EnergyIndicator from './pages/energyIndicator';
 import APCPerformanceMonitor from './pages/APCvalues/index'
 import PIDPerformanceEvaluation from './pages/PID性能评估板块';
-import EnergySupply_demand from './pages/情景融合优化';
+import EnergySupply_demand from './pages/毛胚库存';
 import ExtraApp2 from './pages/ExtraAPP2';
 import ModelPredictiveControl from './pages/ModelPredicateControl'
 import ProductionStatistics from './pages/ProductionStatistics'
